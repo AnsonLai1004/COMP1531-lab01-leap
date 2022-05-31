@@ -11,7 +11,16 @@
  */
 function isLeap(year) {
   // TODO: return true or false depending on the year, rather than null.
-  return null;
+  if (year % 4 !== 0) {
+    return false;
+  }
+  if (year % 100 !== 0) {
+    return true;
+  }
+  if (year % 400 !== 0) {
+    return false;
+  }
+  return true;
 }
 
 /**
@@ -23,7 +32,13 @@ function isLeap(year) {
  */
 function countLeaps(yearArray) {
   // TODO
-  return -1;
+  let count = 0; 
+  for (const year in yearArray) {
+    if (isLeap(yearArray[year])) {
+      count += 1;
+    }
+  }
+  return count;
 }
 
 /**
@@ -34,7 +49,11 @@ function countLeaps(yearArray) {
  * @returns
  */
 function getNextLeap(year) {
-  return -1;
+  let i = year + 1;
+  for (i; !(isLeap(i)); i++) {
+
+  }
+  return i;
 }
 
 //= ========================================================================= //
