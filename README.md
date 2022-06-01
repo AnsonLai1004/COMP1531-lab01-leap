@@ -37,9 +37,9 @@ Below is an interface for the functions inside [leap.js](leap.js). Each function
 
 | Name & Description | Parameters | Return Type         | Errors |
 |------------------|----------|--------------------|------|
-|`isLeap` <br /> Given a strictly positive year, return true if it is a [leap year](https://en.wikipedia.org/wiki/Leap_year#Algorithm) and false otherwise. | (year) | boolean | N/A |
-|`countLeaps` <br /> Given an array of strictly positive years, return the number of leap years present in the array. | (yearArray) | number | N/A |
-|`getNextLeap` <br /> Given a strictly positive year, return the closest leap year **AFTER** the given year.| (year) | number | N/A |
+|`isLeap` <br/><br/>Given a strictly positive year, return true if it is a [leap year](https://en.wikipedia.org/wiki/Leap_year#Algorithm) and false otherwise. | (year) | boolean | N/A |
+|`countLeaps` <br/><br/>Given an array of strictly positive years, return the number of leap years present in the array. | (yearArray) | number | N/A |
+|`getNextLeap` <br/><br/>Given a strictly positive year, return the closest leap year **AFTER** the given year.| (year) | number | N/A |
 
 
 ### Interface: Data Types
