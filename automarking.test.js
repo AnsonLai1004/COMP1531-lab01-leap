@@ -5,7 +5,7 @@ const isLeap = leap.__get__('isLeap');
 const countLeaps = leap.__get__('countLeaps');
 const getNextLeap = leap.__get__('getNextLeap');
 
-describe('isLeap', () => {
+describe('isLeapTest', () => {
   test.each([
     { year: 2299, expected: false },
     { year: 2304, expected: true },
@@ -18,7 +18,7 @@ describe('isLeap', () => {
   });
 });
 
-describe('countLeap', () => {
+describe('countLeapTest', () => {
   test.each([
     { yearArray: [], expected: 0 },
     { yearArray: [4], expected: 1 },
@@ -31,7 +31,7 @@ describe('countLeap', () => {
   });
 });
 
-describe('getNextLeap', () => {
+describe('getNextLeapTest', () => {
   test.each([
     { year: 1, expected: 4 },
     { year: 2, expected: 4 },
